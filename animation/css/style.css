@@ -1,0 +1,27 @@
+@charset "utf-8";
+.animation1 {
+    display: inline-block;
+    background-color: darkorange;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    animation: rotation-scale 2s ease infinite alternate;
+}
+
+@keyframes rotation-scale {
+    0% {
+        transform: scale(0.3);
+    }
+    50% {
+        transform: scale(0.5) rotate(-180deg);
+        background: rgb(255, 94, 0);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        background: aqua;
+    }
+}
